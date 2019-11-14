@@ -32,17 +32,17 @@ $(function () {
 
 
   let left = function () {
-    //if the rocketship is going left but over 0px, then it can keep moving left - 5px from its current position
-    if (gameOver === false && parseInt($(".rocketShip").css("left")) > 0) {
-      $(".rocketShip").css("left", parseInt($(".rocketShip").css("left")) - 5);
+    //if the rocketArea is going left but over 0px, then it can keep moving left - 5px from its current position
+    if (gameOver === false && parseInt($(".rocketArea").css("left")) > 0) {
+      $(".rocketArea").css("left", parseInt($(".rocketArea").css("left")) - 5);
       moveLeft = requestAnimationFrame(left);
     }
   };
 
   let right = function () {
-    //if the rocketship is going right but under 350px, then it can keep moving right + 5px from its current position
-    if (gameOver === false && parseInt($(".rocketShip").css("left")) < 320) {
-      $(".rocketShip").css("left", parseInt($(".rocketShip").css("left")) + 5);
+    //if the rocketArea is going right but under 350px, then it can keep moving right + 5px from its current position
+    if (gameOver === false && parseInt($(".rocketArea").css("left")) < 320) {
+      $(".rocketArea").css("left", parseInt($(".rocketArea").css("left")) + 5);
       moveRight = requestAnimationFrame(right);
     }
   };
@@ -54,8 +54,9 @@ $(function () {
   function repeat() {
     if (gameOver === false) {
 
-      if (collision($('.rocketShip'), $('.meteorOne')) || collision($('.rocketShip'), $('.meteorTwo')) || collision($('.rocketShip'), $('.meteorThree')) || collision($('.rocketShip'), $('.meteorFour'))) {
-        alert('you lose');
+      if (collision($('.rocketArea'), $('.meteorOne')) || collision($('.rocketArea'), $('.meteorTwo')) || collision($('.rocketArea'), $('.meteorThree')) || collision($('.rocketArea'), $('.meteorFour'))) {
+        alert('you lose!');
+        location.reload(true);
       }
 
       meteorFalling($('.meteorOne'));

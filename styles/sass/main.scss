@@ -27,37 +27,50 @@ h1 {
     width: 60px;
     height: 60px;
     margin: 0 auto;
-    text-align: center;
   }
 
-  .meteorTwo {
-    position: absolute;
-    left: 10px;
-    top: -270px;
-  }
+  // .meteorTwo {
+  //   position: absolute;
+  //   left: 10px;
+  //   top: -270px;
+  //   width: 60px;
+  //   height: 60px;
+  //   margin: 0 auto;
+  // }
 
-  .meteorThree {
-    position: absolute;
-    left: 300px;
-    top: -400px;
-  }
+  // .meteorThree {
+  //   position: absolute;
+  //   left: 300px;
+  //   top: -400px;
+  //   width: 60px;
+  //   height: 60px;
+  //   margin: 0 auto;
+  // }
 
-  .meteorFour {
-    position: absolute;
-    left: 200px;
-    top: -600px;
-  }
+  // .meteorFour {
+  //   position: absolute;
+  //   left: 200px;
+  //   top: -600px;
+  //   width: 60px;
+  //   height: 60px;
+  //   margin: 0 auto;
+  // }
 
 
   .rocketArea {
-    position: relative;
-    width: 100%;
+    position: absolute;
+    left: 180px;
+    width: 55px;
     top: 500px;
-    height: 80px;
+    height: 60px;
+    margin: 0 auto;
 
     .rocketShip {
       position: absolute;
-      left: 180px;
+      display: block;
+      margin: 0 auto;
+      left: -10px;
+      top: -5px;
     }
   }
 }

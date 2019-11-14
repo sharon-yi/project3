@@ -1,3 +1,7 @@
+* {
+  border: 1px solid red;
+}
+
 body {
   margin: 0 auto;
   background-color: lightblue;
@@ -17,20 +21,28 @@ h1 {
   overflow: hidden;
 }
 
-.gameArea .meteor {
+.gameArea .meteorOne {
   position: absolute;
-  left: 0px;
-  top: -100px;
+  left: 100px;
+  top: -90px;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
 }
 
 .gameArea .rocketArea {
-  position: relative;
-  width: 100%;
+  position: absolute;
+  left: 180px;
+  width: 55px;
   top: 500px;
-  height: 80px;
+  height: 60px;
+  margin: 0 auto;
 }
 
 .gameArea .rocketArea .rocketShip {
   position: absolute;
-  left: 180px;
+  display: block;
+  margin: 0 auto;
+  left: -10px;
+  top: -5px;
 }
