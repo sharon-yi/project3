@@ -1,51 +1,52 @@
-$(document).keydown(function (e) {
-  //if right arrow key(39) is pressed down
-  if (e.which == '39') {
-    //move the object to position left +250 and ensure it finishes animating when another key is pressed
-    $(".userIcon").finish().animate({
-      left: "+250"
-      //move fast
-    }, "fast");
-  }
+$(function () {
+
+  let gameOver = false;
+
+  let moveLeft = false;
+  let moveRight = false;
+
+
+
+
+  $(document).keydown(function (e) {
+    if (gameOver === false) {
+      let key = e.keyCode;
+      if (key == '37' && moveLeft === false) {
+        moveLeft = requestAnimationFrame(left);
+      } else if (key == '39' && moveRight === false) {
+        moveRight = requestAnimationFrame(right);
+      }
+    }
+  });
+
+  $(document).on('keyup', function (e) {
+    if (gameOver === false) {
+      let key = e.keyCode;
+      if (key === 37) {
+        cancelAnimationFrame(moveLeft);
+        moveLeft = false;
+      } else if (key === 39) {
+        cancelAnimationFrame(moveRight);
+        moveRight = false;
+      }
+    }
+  });
+
+
+
+
+  let left = function () {
+    if (gameOver === false && parseInt($(".rocketShip").css("left")) > 0) {
+      $(".rocketShip").css("left", parseInt($(".rocketShip").css("left")) - 5);
+      moveLeft = requestAnimationFrame(left);
+    }
+  };
+
+  let right = function () {
+    if (gameOver === false && parseInt($(".rocketShip").css("left")) > 0) {
+      $(".rocketShip").css("left", parseInt($(".rocketShip").css("left")) + 5);
+      moveRight = requestAnimationFrame(right);
+    }
+  };
+
 });
-
-$(document).keydown(function (e) {
-  //if left arrow key(37) is pressed down
-  if (e.which == '37') {
-    //move the object to position left +60 (original position) and ensure it finishes animating when another key is pressed
-    $(".userIcon").finish().animate({
-      left: "+45"
-    }, "fast");
-  }
-});
-
-// const fallingObstacles = function () {
-//   const obstacles = $();
-//   const amountOfObstacles = 3;
-//   for (i = 0; i < amountOfObstacles; ++i)
-  
-// }
-
-
-
-// let timer = setInterval(function () {
-//   if (animation complete) clearInterval(timer);
-//   else increase style.left by 2 px
-// }, 20); // change by 2px every 20ms, about 50 frames per second
-
-let start = Date.now(); // remember start time
-let timer = setInterval(function () {
-  // how much time passed from the start?
-  let timePassed = Date.now() - start;
-  if (timePassed >= 3000) {
-    clearInterval(timer); // finish the animation after 2 seconds
-    return;
-  }
-  // draw the animation at the moment timePassed
-  draw(timePassed);
-}, 20);
-// as timePassed goes from 0 to 2000
-// left gets values from 0px to 400px
-function draw(timePassed) {
-  obstacle.style.top = timePassed / 5 + 'px';
-}

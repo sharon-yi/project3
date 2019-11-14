@@ -1,8 +1,7 @@
-* {
-  border: 1px solid red;
-}
+// * {
+//   border: 1px solid red;
+// }
 body {
-  max-width: 600px;
   margin: 0 auto;
   background-color: lightblue;
 }
@@ -14,25 +13,26 @@ h1 {
 .gameArea {
   position: relative;
   margin: 0 auto;
-  width: 400px;
+  width: 90%;
+  max-width: 400px;
   height: 600px;
   background-color: white;
   overflow: hidden;
 
-  #obstacle {
+  .meteor {
     position: absolute;
     left: 0px;
     top: -100px;
   }
 
-  .userArea {
+  .rocketArea {
     position: relative;
     width: 100%;
     top: 450px;
     height: 100px;
 
-    .userIcon {
-      position: relative;
+    .rocketShip {
+      position: absolute;
       left: 45px;
     }
   }
