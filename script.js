@@ -48,21 +48,25 @@ $(function () {
   };
 
 
+  let meteorBorder = ($('.meteorHeight'), $('.meteorWidth'));
+  let rocketBorder = ($('.rocketHeight'), $('.rocketWidth'));
+
+
   //a request animation frame idek
   let keepFalling = requestAnimationFrame(repeat);
 
   function repeat() {
     if (gameOver === false) {
 
-      if (collision($('.rocketArea'), $('.meteorOne')) || collision($('.rocketArea'), $('.meteorTwo')) || collision($('.rocketArea'), $('.meteorThree')) || collision($('.rocketArea'), $('.meteorFour'))) {
+      if (collision($('.rocketArea'), myMeteor) || collision($('.rocketArea'), $('.meteorAreaTwo')) || collision($('.rocketArea'), $('.meteorAreaThree')) || collision($('.rocketArea'), $('.meteorAreaFour'))) {
         alert('you lose!');
         location.reload(true);
       }
 
-      meteorFalling($('.meteorOne'));
-      meteorFalling($('.meteorTwo'));
-      meteorFalling($('.meteorThree'));
-      meteorFalling($('.meteorFour'));
+      meteorFalling($('.meteorAreaOne'));
+      meteorFalling($('.meteorAreaTwo'));
+      meteorFalling($('.meteorAreaThree'));
+      meteorFalling($('.meteorAreaFour'));
 
 
       requestAnimationFrame(repeat);
@@ -77,7 +81,7 @@ $(function () {
       let randomPosition = parseInt(Math.random() * 320);
       meteor.css('left', randomPosition);
     }
-    meteor.css('top', topOfArea + 2);
+    meteor.css('top', topOfArea + 1);
   }
 
 

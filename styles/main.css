@@ -1,7 +1,3 @@
-* {
-  border: 1px solid red;
-}
-
 body {
   margin: 0 auto;
   background-color: lightblue;
@@ -21,22 +17,84 @@ h1 {
   overflow: hidden;
 }
 
-.gameArea .meteorOne {
+.gameArea .meteorAreaOne {
   position: absolute;
   left: 100px;
   top: -90px;
-  width: 60px;
-  height: 60px;
+  margin: 0 auto;
+}
+
+.gameArea .meteorAreaOne .meteorHeight {
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.gameArea .meteorAreaOne .meteorWidth {
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 40px;
+  margin: auto 0;
+  top: 20px;
+  left: -20px;
+  border: 1px solid red;
+}
+
+.gameArea .meteorAreaOne .meteor {
+  position: absolute;
+  display: block;
+  top: -20px;
+}
+
+.gameArea .meteorAreaTwo {
+  position: absolute;
+  left: 10px;
+  top: -270px;
+  margin: 0 auto;
+}
+
+.gameArea .meteorAreaThree {
+  position: absolute;
+  left: 300px;
+  top: -400px;
+  margin: 0 auto;
+}
+
+.gameArea .meteorAreaFour {
+  position: absolute;
+  left: 200px;
+  top: -600px;
   margin: 0 auto;
 }
 
 .gameArea .rocketArea {
   position: absolute;
   left: 180px;
-  width: 55px;
+  width: 20px;
   top: 500px;
-  height: 60px;
   margin: 0 auto;
+  border: 1px solid red;
+}
+
+.gameArea .rocketArea .rocketHeight {
+  border: 1px solid green;
+  height: 60px;
+  width: 20px;
+  position: absolute;
+  margin: 0 auto;
+}
+
+.gameArea .rocketArea .rocketWidth {
+  border: 1px solid purple;
+  height: 50px;
+  width: 60px;
+  margin: 0 auto;
+  left: -20px;
+  top: 20px;
+  position: absolute;
 }
 
 .gameArea .rocketArea .rocketShip {
@@ -44,5 +102,5 @@ h1 {
   display: block;
   margin: 0 auto;
   left: -10px;
-  top: -5px;
+  top: -35px;
 }
