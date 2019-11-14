@@ -3,6 +3,22 @@ $(function () {
   let moveLeft = false;
   let moveRight = false;
 
+  let rh = $('.rocketHeight')
+  let rw = $('.rocketWidth')
+  let ma1 = $('.ma1')
+  let ma2 = $('.ma2')
+  let ma3 = $('.ma3')
+  let ma4 = $('.ma4')
+  let mh1 = $('.mh1')
+  let mh2 = $('.mh2')
+  let mh3 = $('.mh3')
+  let mh4 = $('.mh4')
+  let mw1 = $('.mw1')
+  let mw2 = $('.mw2')
+  let mw3 = $('.mw3')
+  let mw4 = $('.mw4')
+
+
   //MOVING LEFT AND RIGHT STARTS
   $(document).on('keydown', function (e) {
     if (gameOver === false) {
@@ -48,30 +64,26 @@ $(function () {
   };
 
 
-  let meteorBorder = ($('.meteorHeight'), $('.meteorWidth'));
-  let rocketBorder = ($('.rocketHeight'), $('.rocketWidth'));
-
-
   //a request animation frame idek
-  let keepFalling = requestAnimationFrame(repeat);
+  keepFalling = requestAnimationFrame(repeat);
 
   function repeat() {
     if (gameOver === false) {
-
-      if (collision($('.rocketArea'), myMeteor) || collision($('.rocketArea'), $('.meteorAreaTwo')) || collision($('.rocketArea'), $('.meteorAreaThree')) || collision($('.rocketArea'), $('.meteorAreaFour'))) {
+      if (collision(rh, mh1) || collision(rh, mh2) || collision(rh, mh3) || collision(rh, mh4) || collision(rh, mw1) || collision(rh, mw2) || collision(rh, mw3) || collision(rh, mw4) || collision(rw, mh1) || collision(rw, mh2) || collision(rw, mh3) || collision(rw, mh4) || collision(rw, mw1) || collision(rw, mw2) || collision(rw, mw3) || collision(rw, mw4)) {
+        
         alert('you lose!');
         location.reload(true);
+
+      }
       }
 
-      meteorFalling($('.meteorAreaOne'));
-      meteorFalling($('.meteorAreaTwo'));
-      meteorFalling($('.meteorAreaThree'));
-      meteorFalling($('.meteorAreaFour'));
-
+      meteorFalling($('.ma1'));
+      meteorFalling($('.ma2'));
+      meteorFalling($('.ma3'));
+      meteorFalling($('.ma4'));
 
       requestAnimationFrame(repeat);
-    }
-  }
+  };
 
 
   function meteorFalling(meteor) {
@@ -81,13 +93,8 @@ $(function () {
       let randomPosition = parseInt(Math.random() * 320);
       meteor.css('left', randomPosition);
     }
-    meteor.css('top', topOfArea + 1);
+    meteor.css('top', topOfArea + 5);
   }
-
-
-
-
-
 
 
   // COLLISION CODE from https://gist.github.com/jaxxreal/7527349
@@ -109,6 +116,4 @@ $(function () {
     if (b1 < y2 || y1 > b2 || r1 < x2 || x1 > r2) return false;
     return true;
   }
-
-
 });

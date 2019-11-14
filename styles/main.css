@@ -17,22 +17,15 @@ h1 {
   overflow: hidden;
 }
 
-.gameArea .meteorAreaOne {
-  position: absolute;
-  left: 100px;
-  top: -90px;
-  margin: 0 auto;
-}
-
-.gameArea .meteorAreaOne .meteorHeight {
+.gameArea .ma1 .mh1 {
   position: absolute;
   width: 40px;
   height: 80px;
   margin: 0 auto;
-  border: 1px solid red;
+  border: 1px solid blue;
 }
 
-.gameArea .meteorAreaOne .meteorWidth {
+.gameArea .ma1 .mw1 {
   position: absolute;
   display: block;
   width: 80px;
@@ -43,27 +36,91 @@ h1 {
   border: 1px solid red;
 }
 
-.gameArea .meteorAreaOne .meteor {
+.gameArea .ma2 .mh2 {
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  margin: 0 auto;
+  border: 1px solid blue;
+}
+
+.gameArea .ma2 .mw2 {
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 40px;
+  margin: auto 0;
+  top: 20px;
+  left: -20px;
+  border: 1px solid red;
+}
+
+.gameArea .ma3 .mh3 {
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  margin: 0 auto;
+  border: 1px solid blue;
+}
+
+.gameArea .ma3 .mw3 {
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 40px;
+  margin: auto 0;
+  top: 20px;
+  left: -20px;
+  border: 1px solid red;
+}
+
+.gameArea .ma4 .mh4 {
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  margin: 0 auto;
+  border: 1px solid blue;
+}
+
+.gameArea .ma4 .mw4 {
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 40px;
+  margin: auto 0;
+  top: 20px;
+  left: -20px;
+  border: 1px solid red;
+}
+
+.gameArea .meteor {
   position: absolute;
   display: block;
   top: -20px;
 }
 
-.gameArea .meteorAreaTwo {
+.gameArea .ma1 {
+  position: absolute;
+  left: 100px;
+  top: -90px;
+  margin: 0 auto;
+}
+
+.gameArea .ma2 {
   position: absolute;
   left: 10px;
   top: -270px;
   margin: 0 auto;
 }
 
-.gameArea .meteorAreaThree {
+.gameArea .ma3 {
   position: absolute;
   left: 300px;
   top: -400px;
   margin: 0 auto;
 }
 
-.gameArea .meteorAreaFour {
+.gameArea .ma4 {
   position: absolute;
   left: 200px;
   top: -600px;
@@ -90,7 +147,7 @@ h1 {
 .gameArea .rocketArea .rocketWidth {
   border: 1px solid purple;
   height: 50px;
-  width: 60px;
+  width: 55px;
   margin: 0 auto;
   left: -20px;
   top: 20px;
@@ -101,6 +158,6 @@ h1 {
   position: absolute;
   display: block;
   margin: 0 auto;
-  left: -10px;
-  top: -35px;
+  left: -13px;
+  top: -30px;
 }

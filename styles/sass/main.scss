@@ -20,22 +20,36 @@ h1 {
   background-color: white;
   overflow: hidden;
 
-  .meteorAreaOne {
-    position: absolute;
-    left: 100px;
-    top: -90px;
-    margin: 0 auto;
 
-    .meteorHeight {
+ .ma1 {
+   .mh1 {
+     position: absolute;
+     width: 40px;
+     height: 80px;
+     margin: 0 auto;
+     border: 1px solid blue;
+   }
+   .mw1 {
+     position: absolute;
+     display: block;
+     width: 80px;
+     height: 40px;
+     margin: auto 0;
+     top: 20px;
+     left: -20px;
+     border: 1px solid red;
+   }
+ }
+  .ma2 {
+    .mh2 {
       position: absolute;
       width: 40px;
       height: 80px;
       margin: 0 auto;
-      border: 1px solid red;
-
+      border: 1px solid blue;
     }
 
-    .meteorWidth {
+    .mw2 {
       position: absolute;
       display: block;
       width: 80px;
@@ -44,36 +58,84 @@ h1 {
       top: 20px;
       left: -20px;
       border: 1px solid red;
-
-    }
-
-    .meteor {
-      position: absolute;
-      display: block;
-      top: -20px;
     }
   }
+   .ma3 {
+     .mh3 {
+       position: absolute;
+       width: 40px;
+       height: 80px;
+       margin: 0 auto;
+       border: 1px solid blue;
+     }
 
-  .meteorAreaTwo {
+     .mw3 {
+       position: absolute;
+       display: block;
+       width: 80px;
+       height: 40px;
+       margin: auto 0;
+       top: 20px;
+       left: -20px;
+       border: 1px solid red;
+     }
+   }
+
+    .ma4 {
+      .mh4 {
+        position: absolute;
+        width: 40px;
+        height: 80px;
+        margin: 0 auto;
+        border: 1px solid blue;
+      }
+
+      .mw4 {
+        position: absolute;
+        display: block;
+        width: 80px;
+        height: 40px;
+        margin: auto 0;
+        top: 20px;
+        left: -20px;
+        border: 1px solid red;
+      }
+    }
+
+   .meteor {
+     position: absolute;
+     display: block;
+     top: -20px;
+   }
+  .ma1 {
+    position: absolute;
+    left: 100px;
+    top: -90px;
+    margin: 0 auto;
+  }
+
+  .ma2 {
     position: absolute;
     left: 10px;
     top: -270px;
     margin: 0 auto;
   }
 
-  .meteorAreaThree {
+  .ma3 {
     position: absolute;
     left: 300px;
     top: -400px;
     margin: 0 auto;
   }
 
-  .meteorAreaFour {
+  .ma4 {
     position: absolute;
     left: 200px;
     top: -600px;
     margin: 0 auto;
   }
+
+ 
 
   // .meteorTwo {
   //   position: absolute;
@@ -122,7 +184,7 @@ h1 {
     .rocketWidth {
       border: 1px solid purple;
       height: 50px;
-      width: 60px;
+      width: 55px;
       margin: 0 auto;
       left: -20px;
       top: 20px;
@@ -133,8 +195,8 @@ h1 {
       position: absolute;
       display: block;
       margin: 0 auto;
-      left: -10px;
-      top: -35px;
+      left: -13px;
+      top: -30px;
     }
   }
 
