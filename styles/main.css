@@ -26,11 +26,11 @@ h1 {
 .gameArea .rocketArea {
   position: relative;
   width: 100%;
-  top: 450px;
-  height: 100px;
+  top: 500px;
+  height: 80px;
 }
 
 .gameArea .rocketArea .rocketShip {
   position: absolute;
-  left: 45px;
+  left: 180px;
 }

@@ -1,6 +1,7 @@
-// * {
-//   border: 1px solid red;
-// }
+* {
+  border: 1px solid red;
+}
+
 body {
   margin: 0 auto;
   background-color: lightblue;
@@ -19,22 +20,44 @@ h1 {
   background-color: white;
   overflow: hidden;
 
-  .meteor {
+  .meteorOne {
     position: absolute;
-    left: 0px;
-    top: -100px;
+    left: 100px;
+    top: -90px;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    text-align: center;
   }
+
+  .meteorTwo {
+    position: absolute;
+    left: 10px;
+    top: -270px;
+  }
+
+  .meteorThree {
+    position: absolute;
+    left: 300px;
+    top: -400px;
+  }
+
+  .meteorFour {
+    position: absolute;
+    left: 200px;
+    top: -600px;
+  }
+
 
   .rocketArea {
     position: relative;
     width: 100%;
-    top: 450px;
-    height: 100px;
+    top: 500px;
+    height: 80px;
 
     .rocketShip {
       position: absolute;
-      left: 45px;
+      left: 180px;
     }
   }
 }
-
