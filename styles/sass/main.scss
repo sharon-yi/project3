@@ -4,7 +4,9 @@
 
 body {
   margin: 0 auto;
-  background-color: #769ac1;
+  // background-color: #769ac1;
+  background-color: #1c1c1c;
+
   font-family: Helvetica, sans-serif;
 }
 
@@ -12,15 +14,14 @@ h1 {
   text-align: center;
   font-weight: bold;
   font-family: 'Baloo Bhai', sans-serif;
-  color: black;
-    letter-spacing: 1.5px;
-    font-size: 40px;
-
+  color: white;
+  letter-spacing: 1.5px;
+  font-size: 40px;
 }
 
 .swal2-title {
-  font-family: 'Baloo Bhai',sans-serif;
-    letter-spacing: 1.5px;
+  font-family: 'Baloo Bhai', sans-serif;
+  letter-spacing: 1.5px;
 
 
 }
@@ -90,16 +91,16 @@ h1 {
   .ma3 {
     .mh3 {
       position: absolute;
-      width: 20px;
-      height: 60px;
+      width: 30px;
+      height: 70px;
       margin: 0 auto;
     }
 
     .mw3 {
       position: absolute;
       display: block;
-      width: 60px;
-      height: 20px;
+      width: 70px;
+      height: 30px;
       margin: auto 0;
       top: 20px;
       left: -20px;
@@ -130,25 +131,6 @@ h1 {
     display: block;
     top: -20px;
   }
-
-
-  // .meteor {
-  //   animation: rotation 3s infinite alternate;
-  // }
-
-  // @keyframes rotation {
-  //   from {
-  //     transform: rotate(0deg);
-  //   }
-  //   to {
-  //     transform: rotate(359deg);
-  //   }
-  // }
-
-  // .meteor2 {
-  //   animation: rotation 4s infinite linear;
-
-  // }
 
 
   .ma1 {

@@ -19,7 +19,15 @@ $(function () {
   let mw4 = $('.mw4')
 
 
-
+  // Swal.fire({
+  //   title: 'hello',
+  //   text: 'You',
+  //   confirmButtonColor: '#9b2323',
+  //   confirmButtonText: 'PLAY',
+  //   allowOutsideClick: false,
+  // }).then((result) => {
+  //   gameOver = false;
+  // })
 
 
   //MOVING LEFT AND RIGHT STARTS
@@ -92,11 +100,11 @@ $(function () {
 
   function gameEnds() {
     gameOver = true;
-    requestAnimationFrame(keepFalling) = false;
+    cancelAnimationFrame(keepFalling);
     cancelAnimationFrame(moveRight);
     cancelAnimationFrame(moveLeft);
-
   }
+
   //a request animation frame idek
 
   keepFalling = requestAnimationFrame(repeat);
@@ -119,6 +127,7 @@ $(function () {
         })
         gameEnds();
       }
+      requestAnimationFrame(repeat);
     }
     starFalling($('.star1'));
     starFalling($('.star2'));
@@ -129,8 +138,6 @@ $(function () {
     meteorFalling($('.ma2'));
     meteorFalling($('.ma3'));
     meteorFalling($('.ma4'));
-
-    requestAnimationFrame(repeat);
   };
 
   function meteorFalling(meteor) {
