@@ -5,23 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles/main.css">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
   <title>Document</title>
 </head>
 
 <body>
-  <h1>a rocket game wee</h1>
+  <h1>INTO THE VOID 🚀</h1>
 
   <!-- GAME AREA DIV -->
   <div class="gameArea">
-    <p id="scoreCounter"></p>
+    <p class="scoreTitle"><span id="scoreCounter">0</span> KM</p>
     <div class="ma1">
       <!-- 1 height -->
       <div class="mh1">
         <!-- 1 width -->
         <div class="mw1">
-          <img id="meteor" class="meteor" src="images/meteor.svg" alt="">
+          <img id="meteor" class="meteor spin1" src="images/meteor.svg" alt="">
         </div>
         <!--end of width-->
       </div>
@@ -35,7 +37,7 @@
       <div class="mh2">
         <!-- 1 width -->
         <div class="mw2">
-          <img id="meteor" class="meteor2" src="images/meteor.svg" alt="">
+          <img id="meteor" class="meteor" src="images/meteor.svg" alt="">
         </div>
         <!--end of width-->
       </div>
@@ -81,7 +83,7 @@
         </div> <!-- PART 2 ENDS -->
       </div><!-- PART 1 ENDS-->
     </div>
-  
+
     <img id="star" class="star1" src="images/star.svg" alt="">
     <img id="star" class="star2" src="images/star.svg" alt="">
     <img id="star" class="star3" src="images/star.svg" alt="">
