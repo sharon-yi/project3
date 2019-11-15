@@ -1,11 +1,19 @@
 body {
   margin: 0 auto;
-  background-color: #7DAFDF;
+  background-color: black;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
   text-align: center;
+}
+
+.scoreCounter {
+  display: block;
+  position: absolute;
+  color: white;
+  left: 10px;
+  margin: 10px auto;
 }
 
 .gameArea {
@@ -21,16 +29,16 @@ h1 {
 
 .gameArea .ma1 .mh1 {
   position: absolute;
-  width: 40px;
-  height: 80px;
+  width: 20px;
+  height: 60px;
   margin: 0 auto;
 }
 
 .gameArea .ma1 .mw1 {
   position: absolute;
   display: block;
-  width: 80px;
-  height: 40px;
+  width: 60px;
+  height: 20px;
   margin: auto 0;
   top: 15px;
   left: -20px;
@@ -38,16 +46,16 @@ h1 {
 
 .gameArea .ma2 .mh2 {
   position: absolute;
-  width: 40px;
-  height: 80px;
+  width: 30px;
+  height: 70px;
   margin: 0 auto;
 }
 
 .gameArea .ma2 .mw2 {
   position: absolute;
   display: block;
-  width: 80px;
-  height: 40px;
+  width: 70px;
+  height: 30px;
   margin: auto 0;
   top: 20px;
   left: -20px;
@@ -55,16 +63,16 @@ h1 {
 
 .gameArea .ma3 .mh3 {
   position: absolute;
-  width: 40px;
-  height: 80px;
+  width: 20px;
+  height: 60px;
   margin: 0 auto;
 }
 
 .gameArea .ma3 .mw3 {
   position: absolute;
   display: block;
-  width: 80px;
-  height: 40px;
+  width: 60px;
+  height: 20px;
   margin: auto 0;
   top: 20px;
   left: -20px;
@@ -72,22 +80,23 @@ h1 {
 
 .gameArea .ma4 .mh4 {
   position: absolute;
-  width: 40px;
-  height: 80px;
+  width: 30px;
+  height: 70px;
   margin: 0 auto;
 }
 
 .gameArea .ma4 .mw4 {
   position: absolute;
   display: block;
-  width: 80px;
-  height: 40px;
+  width: 70px;
+  height: 30px;
   margin: auto 0;
   top: 20px;
   left: -20px;
 }
 
-.gameArea .meteor {
+.gameArea .meteor,
+.gameArea .meteor2 {
   position: absolute;
   display: block;
   top: -20px;
@@ -95,7 +104,7 @@ h1 {
 
 .gameArea .ma1 {
   position: absolute;
-  left: 100px;
+  left: 150px;
   top: -90px;
   margin: 0 auto;
 }
@@ -110,14 +119,14 @@ h1 {
 .gameArea .ma3 {
   position: absolute;
   left: 300px;
-  top: -400px;
+  top: -420px;
   margin: 0 auto;
 }
 
 .gameArea .ma4 {
   position: absolute;
   left: 200px;
-  top: -600px;
+  top: -620px;
   margin: 0 auto;
 }
 
@@ -154,7 +163,10 @@ h1 {
   top: -30px;
 }
 
-.gameArea .star1, .gameArea .star2, .gameArea .star3, .gameArea .star4 {
+.gameArea .star1,
+.gameArea .star2,
+.gameArea .star3,
+.gameArea .star4 {
   position: absolute;
   width: 10px;
   height: 10px;

@@ -4,7 +4,7 @@
 
 body {
   margin: 0 auto;
-  background-color: #7DAFDF;
+  background-color: black;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -12,6 +12,15 @@ h1 {
   text-align: center;
 }
 
+
+
+.scoreCounter {
+  display: block;
+  position: absolute;
+  color: white;
+  left: 10px;
+  margin: 10px auto;
+}
 .gameArea {
   position: relative;
   margin: 0 auto;
@@ -22,43 +31,38 @@ h1 {
   overflow: hidden;
   z-index: -1;
 
-
   .ma1 {
     .mh1 {
       position: absolute;
-      width: 40px;
-      height: 80px;
+      width: 20px;
+      height: 60px;
       margin: 0 auto;
-
-
     }
 
     .mw1 {
       position: absolute;
       display: block;
-      width: 80px;
-      height: 40px;
+      width: 60px;
+      height: 20px;
       margin: auto 0;
       top: 15px;
       left: -20px;
-
-
     }
   }
 
   .ma2 {
     .mh2 {
       position: absolute;
-      width: 40px;
-      height: 80px;
+      width: 30px;
+      height: 70px;
       margin: 0 auto;
     }
 
     .mw2 {
       position: absolute;
       display: block;
-      width: 80px;
-      height: 40px;
+      width: 70px;
+      height: 30px;
       margin: auto 0;
       top: 20px;
       left: -20px;
@@ -68,16 +72,16 @@ h1 {
   .ma3 {
     .mh3 {
       position: absolute;
-      width: 40px;
-      height: 80px;
+      width: 20px;
+      height: 60px;
       margin: 0 auto;
     }
 
     .mw3 {
       position: absolute;
       display: block;
-      width: 80px;
-      height: 40px;
+      width: 60px;
+      height: 20px;
       margin: auto 0;
       top: 20px;
       left: -20px;
@@ -87,31 +91,51 @@ h1 {
   .ma4 {
     .mh4 {
       position: absolute;
-      width: 40px;
-      height: 80px;
+      width: 30px;
+      height: 70px;
       margin: 0 auto;
     }
 
     .mw4 {
       position: absolute;
       display: block;
-      width: 80px;
-      height: 40px;
+      width: 70px;
+      height: 30px;
       margin: auto 0;
       top: 20px;
       left: -20px;
     }
   }
 
-  .meteor {
+  .meteor,
+  .meteor2 {
     position: absolute;
     display: block;
     top: -20px;
   }
 
+  // .meteor {
+  //   animation: rotation 3s infinite alternate;
+  // }
+
+  // @keyframes rotation {
+  //   from {
+  //     transform: rotate(0deg);
+  //   }
+  //   to {
+  //     transform: rotate(359deg);
+  //   }
+  // }
+
+  // .meteor2 {
+  //   animation: rotation 4s infinite linear;
+
+  // }
+
+
   .ma1 {
     position: absolute;
-    left: 100px;
+    left: 150px;
     top: -90px;
     margin: 0 auto;
   }
@@ -126,14 +150,14 @@ h1 {
   .ma3 {
     position: absolute;
     left: 300px;
-    top: -400px;
+    top: -420px;
     margin: 0 auto;
   }
 
   .ma4 {
     position: absolute;
     left: 200px;
-    top: -600px;
+    top: -620px;
     margin: 0 auto;
   }
 
@@ -170,7 +194,10 @@ h1 {
     }
   }
 
-  .star1, .star2, .star3, .star4 {
+  .star1,
+  .star2,
+  .star3,
+  .star4 {
     position: absolute;
     width: 10px;
     height: 10px;
@@ -192,6 +219,7 @@ h1 {
     left: 330px;
     top: -90px;
   }
+
   .star4 {
     left: 50px;
     top: -300px;
