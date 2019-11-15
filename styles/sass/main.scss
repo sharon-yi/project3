@@ -4,7 +4,8 @@
 
 body {
   margin: 0 auto;
-  background-color: lightblue;
+  background-color: #7DAFDF;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -17,36 +18,40 @@ h1 {
   width: 90%;
   max-width: 400px;
   height: 600px;
-  background-color: white;
+  background-color: black;
   overflow: hidden;
+  z-index: -1;
 
 
- .ma1 {
-   .mh1 {
-     position: absolute;
-     width: 40px;
-     height: 80px;
-     margin: 0 auto;
-     border: 1px solid blue;
-   }
-   .mw1 {
-     position: absolute;
-     display: block;
-     width: 80px;
-     height: 40px;
-     margin: auto 0;
-     top: 20px;
-     left: -20px;
-     border: 1px solid red;
-   }
- }
+  .ma1 {
+    .mh1 {
+      position: absolute;
+      width: 40px;
+      height: 80px;
+      margin: 0 auto;
+
+
+    }
+
+    .mw1 {
+      position: absolute;
+      display: block;
+      width: 80px;
+      height: 40px;
+      margin: auto 0;
+      top: 15px;
+      left: -20px;
+
+
+    }
+  }
+
   .ma2 {
     .mh2 {
       position: absolute;
       width: 40px;
       height: 80px;
       margin: 0 auto;
-      border: 1px solid blue;
     }
 
     .mw2 {
@@ -57,56 +62,53 @@ h1 {
       margin: auto 0;
       top: 20px;
       left: -20px;
-      border: 1px solid red;
     }
   }
-   .ma3 {
-     .mh3 {
-       position: absolute;
-       width: 40px;
-       height: 80px;
-       margin: 0 auto;
-       border: 1px solid blue;
-     }
 
-     .mw3 {
-       position: absolute;
-       display: block;
-       width: 80px;
-       height: 40px;
-       margin: auto 0;
-       top: 20px;
-       left: -20px;
-       border: 1px solid red;
-     }
-   }
-
-    .ma4 {
-      .mh4 {
-        position: absolute;
-        width: 40px;
-        height: 80px;
-        margin: 0 auto;
-        border: 1px solid blue;
-      }
-
-      .mw4 {
-        position: absolute;
-        display: block;
-        width: 80px;
-        height: 40px;
-        margin: auto 0;
-        top: 20px;
-        left: -20px;
-        border: 1px solid red;
-      }
+  .ma3 {
+    .mh3 {
+      position: absolute;
+      width: 40px;
+      height: 80px;
+      margin: 0 auto;
     }
 
-   .meteor {
-     position: absolute;
-     display: block;
-     top: -20px;
-   }
+    .mw3 {
+      position: absolute;
+      display: block;
+      width: 80px;
+      height: 40px;
+      margin: auto 0;
+      top: 20px;
+      left: -20px;
+    }
+  }
+
+  .ma4 {
+    .mh4 {
+      position: absolute;
+      width: 40px;
+      height: 80px;
+      margin: 0 auto;
+    }
+
+    .mw4 {
+      position: absolute;
+      display: block;
+      width: 80px;
+      height: 40px;
+      margin: auto 0;
+      top: 20px;
+      left: -20px;
+    }
+  }
+
+  .meteor {
+    position: absolute;
+    display: block;
+    top: -20px;
+  }
+
   .ma1 {
     position: absolute;
     left: 100px;
@@ -135,46 +137,14 @@ h1 {
     margin: 0 auto;
   }
 
- 
-
-  // .meteorTwo {
-  //   position: absolute;
-  //   left: 10px;
-  //   top: -270px;
-  //   width: 60px;
-  //   height: 60px;
-  //   margin: 0 auto;
-  // }
-
-  // .meteorThree {
-  //   position: absolute;
-  //   left: 300px;
-  //   top: -400px;
-  //   width: 60px;
-  //   height: 60px;
-  //   margin: 0 auto;
-  // }
-
-  // .meteorFour {
-  //   position: absolute;
-  //   left: 200px;
-  //   top: -600px;
-  //   width: 60px;
-  //   height: 60px;
-  //   margin: 0 auto;
-  // }
-
-
   .rocketArea {
     position: absolute;
     left: 180px;
     width: 20px;
-    top: 500px;
+    top: 460px;
     margin: 0 auto;
-    border: 1px solid red;
 
     .rocketHeight {
-      border: 1px solid green;
       height: 60px;
       width: 20px;
       position: absolute;
@@ -182,11 +152,10 @@ h1 {
     }
 
     .rocketWidth {
-      border: 1px solid purple;
       height: 50px;
-      width: 55px;
+      width: 50px;
       margin: 0 auto;
-      left: -20px;
+      left: -14px;
       top: 20px;
       position: absolute;
     }
@@ -195,10 +164,39 @@ h1 {
       position: absolute;
       display: block;
       margin: 0 auto;
-      left: -13px;
+      width: 100%;
+      left: 0px;
       top: -30px;
     }
   }
+
+  .star1, .star2, .star3, .star4 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    margin: 0 auto;
+    z-index: -2;
+  }
+
+  .star1 {
+    left: 100px;
+    top: -20px;
+  }
+
+  .star2 {
+    left: 150px;
+    top: -500px;
+  }
+
+  .star3 {
+    left: 330px;
+    top: -90px;
+  }
+  .star4 {
+    left: 50px;
+    top: -300px;
+  }
+
 
 
 }

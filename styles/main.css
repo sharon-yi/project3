@@ -1,6 +1,7 @@
 body {
   margin: 0 auto;
-  background-color: lightblue;
+  background-color: #7DAFDF;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -13,8 +14,9 @@ h1 {
   width: 90%;
   max-width: 400px;
   height: 600px;
-  background-color: white;
+  background-color: black;
   overflow: hidden;
+  z-index: -1;
 }
 
 .gameArea .ma1 .mh1 {
@@ -22,7 +24,6 @@ h1 {
   width: 40px;
   height: 80px;
   margin: 0 auto;
-  border: 1px solid blue;
 }
 
 .gameArea .ma1 .mw1 {
@@ -31,9 +32,8 @@ h1 {
   width: 80px;
   height: 40px;
   margin: auto 0;
-  top: 20px;
+  top: 15px;
   left: -20px;
-  border: 1px solid red;
 }
 
 .gameArea .ma2 .mh2 {
@@ -41,7 +41,6 @@ h1 {
   width: 40px;
   height: 80px;
   margin: 0 auto;
-  border: 1px solid blue;
 }
 
 .gameArea .ma2 .mw2 {
@@ -52,7 +51,6 @@ h1 {
   margin: auto 0;
   top: 20px;
   left: -20px;
-  border: 1px solid red;
 }
 
 .gameArea .ma3 .mh3 {
@@ -60,7 +58,6 @@ h1 {
   width: 40px;
   height: 80px;
   margin: 0 auto;
-  border: 1px solid blue;
 }
 
 .gameArea .ma3 .mw3 {
@@ -71,7 +68,6 @@ h1 {
   margin: auto 0;
   top: 20px;
   left: -20px;
-  border: 1px solid red;
 }
 
 .gameArea .ma4 .mh4 {
@@ -79,7 +75,6 @@ h1 {
   width: 40px;
   height: 80px;
   margin: 0 auto;
-  border: 1px solid blue;
 }
 
 .gameArea .ma4 .mw4 {
@@ -90,7 +85,6 @@ h1 {
   margin: auto 0;
   top: 20px;
   left: -20px;
-  border: 1px solid red;
 }
 
 .gameArea .meteor {
@@ -131,13 +125,11 @@ h1 {
   position: absolute;
   left: 180px;
   width: 20px;
-  top: 500px;
+  top: 460px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 .gameArea .rocketArea .rocketHeight {
-  border: 1px solid green;
   height: 60px;
   width: 20px;
   position: absolute;
@@ -145,11 +137,10 @@ h1 {
 }
 
 .gameArea .rocketArea .rocketWidth {
-  border: 1px solid purple;
   height: 50px;
-  width: 55px;
+  width: 50px;
   margin: 0 auto;
-  left: -20px;
+  left: -14px;
   top: 20px;
   position: absolute;
 }
@@ -158,6 +149,35 @@ h1 {
   position: absolute;
   display: block;
   margin: 0 auto;
-  left: -13px;
+  width: 100%;
+  left: 0px;
   top: -30px;
+}
+
+.gameArea .star1, .gameArea .star2, .gameArea .star3, .gameArea .star4 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin: 0 auto;
+  z-index: -2;
+}
+
+.gameArea .star1 {
+  left: 100px;
+  top: -20px;
+}
+
+.gameArea .star2 {
+  left: 150px;
+  top: -500px;
+}
+
+.gameArea .star3 {
+  left: 330px;
+  top: -90px;
+}
+
+.gameArea .star4 {
+  left: 50px;
+  top: -300px;
 }

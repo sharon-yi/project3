@@ -49,7 +49,7 @@ $(function () {
 
   let left = function () {
     //if the rocketArea is going left but over 0px, then it can keep moving left - 5px from its current position
-    if (gameOver === false && parseInt($(".rocketArea").css("left")) > 0) {
+    if (gameOver === false && parseInt($(".rocketArea").css("left")) > 10) {
       $(".rocketArea").css("left", parseInt($(".rocketArea").css("left")) - 5);
       moveLeft = requestAnimationFrame(left);
     }
@@ -57,7 +57,7 @@ $(function () {
 
   let right = function () {
     //if the rocketArea is going right but under 350px, then it can keep moving right + 5px from its current position
-    if (gameOver === false && parseInt($(".rocketArea").css("left")) < 320) {
+    if (gameOver === false && parseInt($(".rocketArea").css("left")) < 370) {
       $(".rocketArea").css("left", parseInt($(".rocketArea").css("left")) + 5);
       moveRight = requestAnimationFrame(right);
     }
@@ -70,19 +70,22 @@ $(function () {
   function repeat() {
     if (gameOver === false) {
       if (collision(rh, mh1) || collision(rh, mh2) || collision(rh, mh3) || collision(rh, mh4) || collision(rh, mw1) || collision(rh, mw2) || collision(rh, mw3) || collision(rh, mw4) || collision(rw, mh1) || collision(rw, mh2) || collision(rw, mh3) || collision(rw, mh4) || collision(rw, mw1) || collision(rw, mw2) || collision(rw, mw3) || collision(rw, mw4)) {
-        
-        alert('you lose!');
+        alert('you died!!! :(');
         location.reload(true);
-
       }
-      }
+    }
 
-      meteorFalling($('.ma1'));
-      meteorFalling($('.ma2'));
-      meteorFalling($('.ma3'));
-      meteorFalling($('.ma4'));
+    meteorFalling($('.ma1'));
+    meteorFalling($('.ma2'));
+    meteorFalling($('.ma3'));
+    meteorFalling($('.ma4'));
+    starFalling($('.star1'));
+    starFalling($('.star2'));
+    starFalling($('.star3'));
+    starFalling($('.star4'));
 
-      requestAnimationFrame(repeat);
+
+    requestAnimationFrame(repeat);
   };
 
 
@@ -93,8 +96,41 @@ $(function () {
       let randomPosition = parseInt(Math.random() * 320);
       meteor.css('left', randomPosition);
     }
-    meteor.css('top', topOfArea + 5);
+    meteor.css('top', topOfArea + 3);
+
+    if (totalSeconds >= 60) {
+      meteor.css('top', topOfArea + 15);
+    } else if (totalSeconds >= 50) {
+      meteor.css('top', topOfArea + 10);
+    } else if (totalSeconds >= 40) {
+      meteor.css('top', topOfArea + 7);
+    } else if (totalSeconds >= 30) {
+      meteor.css('top', topOfArea + 6);
+    } else if (totalSeconds >= 20) {
+      meteor.css('top', topOfArea + 5);
+    } else if (totalSeconds >= 10) {
+      meteor.css('top', topOfArea + 4);
+    }
   }
+      function starFalling(star) {
+        let topOfArea = parseInt(star.css('top'));
+        if (topOfArea > parseInt($('.gameArea').css('height'))) {
+          topOfArea = 0;
+          let randomPosition = parseInt(Math.random() * 350);
+          star.css('left', randomPosition);
+        }
+        star.css('top', topOfArea + 10);
+      }
+
+  var totalSeconds = 0;
+  setInterval(setTime, 1000);
+
+  function setTime() {
+    ++totalSeconds;
+    console.log(totalSeconds)
+  }
+  
+
 
 
   // COLLISION CODE from https://gist.github.com/jaxxreal/7527349
