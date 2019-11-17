@@ -6,7 +6,6 @@ body {
   margin: 0 auto;
   // background-color: #769ac1;
   background-color: #1c1c1c;
-
   font-family: Helvetica, sans-serif;
 }
 
@@ -22,8 +21,6 @@ h1 {
 .swal2-title {
   font-family: 'Baloo Bhai', sans-serif;
   letter-spacing: 1.5px;
-
-
 }
 
 .scoreTitle {
@@ -45,11 +42,12 @@ h1 {
   margin: 0 auto;
   width: 90%;
   max-width: 400px;
-  height: 600px;
+  max-height: 600px;
+  height: 70vh;
   background-color: black;
   overflow: hidden;
   z-index: -1;
-
+  margin-bottom: 100px;
   .ma1 {
     .mh1 {
       position: absolute;
@@ -165,14 +163,16 @@ h1 {
     position: absolute;
     left: 180px;
     width: 20px;
-    top: 460px;
+    top: 75%;
     margin: 0 auto;
+    border: 1px solid red;
 
     .rocketHeight {
       height: 60px;
       width: 20px;
       position: absolute;
       margin: 0 auto;
+      border: 1px solid blue;
     }
 
     .rocketWidth {
@@ -182,6 +182,7 @@ h1 {
       left: -14px;
       top: 20px;
       position: absolute;
+      border: 1px solid orange;
     }
 
     .rocketShip {
