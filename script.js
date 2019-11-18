@@ -19,7 +19,7 @@ $(function () {
   // Sweet Alert to start the game
   Swal.fire({
     title: 'WELCOME!',
-    text: 'While you and your friend are out on a super secret and important space mission, your friend challenges you to see how far you can travel through the asteroid belt without getting hit! Use left and right arrows to dodge the asteroids',
+    html: "<p>While you are out on a <em> super secret and important </em> space mission, your friend challenges you to see how far you can travel through the asteroid belt without getting hit!!</p> <p> Use <strong> left </strong> and <strong> right </strong> arrows to dodge the asteroids.</p> <p> If you're using a touch screen: <strong> tap </strong> on the left or right side of the screen to move.</p>",
     confirmButtonColor: '#9b2323',
     confirmButtonText: "START",
     allowOutsideClick: false
@@ -84,6 +84,7 @@ $(function () {
       if (gameOver === false && parseInt($(".rocketArea").css("left")) > 10) {
         $(".rocketArea").css("left", parseInt($(".rocketArea").css("left")) - 5);
         moveLeft = requestAnimationFrame(left);
+
       } // left movement will speed up after certain km reached
       if (totalKm >= 160) {
         $(".rocketArea").css("left", parseInt($(".rocketArea").css("left")) - 4);
@@ -140,7 +141,7 @@ $(function () {
           document.getElementById("audioCrash").play();
           Swal.fire({
             title: 'OH NO YOU CRASHED!',
-            text: 'You managed to travel ' + totalKm + ' km before you crashed!',
+            text: 'You managed to travel ' + totalKm + ' km. Do you want to try again to see if you can go further?',
             confirmButtonColor: '#9b2323',
             confirmButtonText: 'PLAY AGAIN',
             allowOutsideClick: false,
@@ -233,4 +234,5 @@ $(function () {
 });
 
 // Music: Eric Skiff - Song Name - Chibi Ninja - Available at http://EricSkiff.com/music
+// Game over sound effect: https://bassgorilla.com/video-game-sound-effects/
 // shoutout to https://developer.mozilla.org/en-US/docs/Web/JavaScript helped me with majority of my code
