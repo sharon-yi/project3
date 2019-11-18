@@ -53,7 +53,7 @@ $(function () {
         }
       }
     });
-    
+
     // [MOVE LEFT AND RIGHT USING TOUCH]
     $(document).on('touchstart', function (e) {
       let gameWidth = $(".gameArea").width();
@@ -104,7 +104,7 @@ $(function () {
         $(".rocketArea").css("left", parseInt($(".rocketArea").css("left")) + 2);
       }
     };
-    
+
     // [SCORE/KM COUNTER]
     // Mine is set at 8km per second - Space Shuttles must reach a speed of around 28,000km per hour to remain in orbit which is around 8km per second :)
     // https://www.nasa.gov/centers/kennedy/about/information/shuttle_faq.html
@@ -136,6 +136,8 @@ $(function () {
       if (gameOver === false) {
         // if rocket height/width hits any of the meteor heights/widths then game over
         if (collision(rH, aH1) || collision(rH, aH2) || collision(rH, aH3) || collision(rH, aH4) || collision(rH, aW1) || collision(rH, aW2) || collision(rH, aW3) || collision(rH, aW4) || collision(rW, aH1) || collision(rW, aH2) || collision(rW, aH3) || collision(rW, aH4) || collision(rW, aW1) || collision(rW, aW2) || collision(rW, aW3) || collision(rW, aW4)) {
+          document.getElementById("audio").pause();
+          document.getElementById("audioCrash").play();
           Swal.fire({
             title: 'OH NO YOU CRASHED!',
             text: 'You managed to travel ' + totalKm + ' km before you crashed!',
