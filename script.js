@@ -58,23 +58,26 @@ $(function () {
     $(document).on('touchstart', function (e) {
       let gameWidth = $(".gameArea").width();
       let touchX = e.touches[0].clientX;
-      if (touchX > gameWidth / 2 && moveLeft === false) {
-        moveRight = requestAnimationFrame(right);
-      } else if (moveRight === false) {
-        moveLeft = requestAnimationFrame(left);
+      if (gameOver === false) {
+        if (touchX > gameWidth / 2 && moveLeft === false) {
+          moveRight = requestAnimationFrame(right);
+        } else if (moveRight === false) {
+          moveLeft = requestAnimationFrame(left);
+        }
       }
     });
 
     $(document).on('touchend', function (e) {
       let gameWidth = $(".gameArea").width();
-
       let touchesX = e.changedTouches[0].clientX;
-      if (touchesX > gameWidth / 2) {
-        cancelAnimationFrame(moveRight);
-        moveRight = false;
-      } else {
-        cancelAnimationFrame(moveLeft);
-        moveLeft = false;
+      if (gameOver === false) {
+        if (touchesX > gameWidth / 2) {
+          cancelAnimationFrame(moveRight);
+          moveRight = false;
+        } else {
+          cancelAnimationFrame(moveLeft);
+          moveLeft = false;
+        }
       }
     });
 
