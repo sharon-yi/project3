@@ -121,7 +121,6 @@ $(function () {
     }
     countScore();
 
-
     // [FUNCTION THAT STOPS THE ANIMATIONS]
     function gameEnds() {
       gameOver = true;
@@ -235,4 +234,4 @@ $(function () {
 
 // Music: Eric Skiff - Song Name - Chibi Ninja - Available at http://EricSkiff.com/music
 // Game over sound effect: https://bassgorilla.com/video-game-sound-effects/
-// shoutout to https://developer.mozilla.org/en-US/docs/Web/JavaScript helped me with majority of my code
+// shoutout to https://developer.mozilla.org/en-US/docs/Web/JavaScript helped me with majority of my code ha ha ha
