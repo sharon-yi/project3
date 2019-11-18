@@ -22,7 +22,7 @@
       title: 'WELCOME!',
       text: 'While you and your friend are out on a super secret and important space mission, your friend challenges you to see how far you can travel through the asteroid belt without getting hit! Use left and right arrows to dodge the asteroids',
       confirmButtonColor: '#9b2323',
-      confirmButtonText: "LET'S GO",
+      confirmButtonText: "START",
       allowOutsideClick: false
     }).then((result) => {
       if (result.value) {
@@ -142,8 +142,8 @@
           if (collision(rh, mh1) || collision(rh, mh2) || collision(rh, mh3) || collision(rh, mh4) || collision(rh, mw1) || collision(rh, mw2) || collision(rh, mw3) || collision(rh, mw4) || collision(rw, mh1) || collision(rw, mh2) || collision(rw, mh3) || collision(rw, mh4) || collision(rw, mw1) || collision(rw, mw2) || collision(rw, mw3) || collision(rw, mw4)) {
             Swal.fire({
               title: 'OH NO YOU CRASHED!',
-              icon: 'warning',
-              iconHtml: '💥',
+              // icon: 'warning',
+              // iconHtml: '💥',
               text: 'You managed to travel ' + totalKm + ' km before you crashed! Want to try again?',
               confirmButtonColor: '#9b2323',
               confirmButtonText: 'PLAY AGAIN',
@@ -157,10 +157,10 @@
           }
           requestAnimationFrame(repeat);
         }
-        starFalling($('.star1'));
-        starFalling($('.star2'));
-        starFalling($('.star3'));
-        starFalling($('.star4'));
+        starFalling($('.starOne'));
+        starFalling($('.starTwo'));
+        starFalling($('.starThree'));
+        starFalling($('.starFour'));
 
         asteroidFalling($('.asteroidAreaOne'));
         asteroidFalling($('.asteroidAreaTwo'));
@@ -193,7 +193,7 @@
       function starFalling(star) {
         let topOfAreaStar = parseInt(star.css('top'));
         if (topOfAreaStar > parseInt($('.gameArea').css('height'))) {
-          topOfAreaStar = 0;
+          topOfAreaStar = -100;
           let randomPositionStar = parseInt(Math.random() * 350);
           star.css('left', randomPositionStar);
         }

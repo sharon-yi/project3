@@ -179,6 +179,59 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
+body {
+  margin: 0 auto;
+  background-color: #1c1c1c;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  margin: 10px 0;
+  font-family: 'Concert One', sans-serif;
+  font-size: 40px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+.gameArea {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  width: 90%;
+  height: 70vh;
+  max-height: 600px;
+  max-width: 400px;
+  background-color: black;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.scoreTitle {
+  position: absolute;
+  display: block;
+  margin: 10px auto;
+  z-index: 2;
+  text-align: right;
+  right: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+}
+
+.swal2-popup .swal2-title {
+  font-family: 'Concert One', sans-serif;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.8em;
+}
+
+.swal2-popup .swal2-content {
+  line-height: 1.3em;
+}
+
 .asteroid {
   position: absolute;
   display: block;
@@ -250,10 +303,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   left: -20px;
 }
 
-.gameArea .star1,
-.gameArea .star2,
-.gameArea .star3,
-.gameArea .star4 {
+.starOne,
+.starTwo,
+.starThree,
+.starFour {
   position: absolute;
   width: 12px;
   height: 12px;
@@ -261,74 +314,27 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   z-index: -2;
 }
 
-.gameArea .star1 {
+.starOne {
   left: 100px;
   top: -20px;
 }
 
-.gameArea .star2 {
+.starTwo {
   left: 150px;
-  top: -500px;
+  top: -450px;
 }
 
-.gameArea .star3 {
+.starThree {
   left: 330px;
   top: -90px;
 }
 
-.gameArea .star4 {
+.starFour {
   left: 50px;
   top: -300px;
 }
 
-body {
-  margin: 0 auto;
-  background-color: #1c1c1c;
-  font-family: Helvetica, sans-serif;
-}
-
-h1 {
-  text-align: center;
-  font-weight: bold;
-  font-family: 'concert one', sans-serif;
-  color: white;
-  letter-spacing: 1.5px;
-  font-size: 40px;
-}
-
-.swal2-title {
-  font-family: 'concert one', sans-serif;
-  letter-spacing: 1.5px;
-}
-
-.scoreTitle {
-  display: block;
-  text-align: right;
-  position: absolute;
-  color: white;
-  right: 10px;
-  margin: 10px auto;
-  font-weight: bold;
-  font-size: 18px;
-  letter-spacing: 1.5px;
-  z-index: 2;
-  text-shadow: 2px 2px 3px black;
-}
-
-.gameArea {
-  position: relative;
-  margin: 0 auto;
-  width: 90%;
-  max-width: 400px;
-  max-height: 600px;
-  height: 70vh;
-  background-color: black;
-  overflow: hidden;
-  z-index: -1;
-  margin-bottom: 100px;
-}
-
-.gameArea .rocketArea {
+.rocketArea {
   position: absolute;
   left: 180px;
   width: 20px;
@@ -336,14 +342,14 @@ h1 {
   margin: 0 auto;
 }
 
-.gameArea .rocketArea .rocketHeight {
+.rocketArea .rocketHeight {
   height: 60px;
   width: 20px;
   position: absolute;
   margin: 0 auto;
 }
 
-.gameArea .rocketArea .rocketWidth {
+.rocketArea .rocketWidth {
   height: 50px;
   width: 50px;
   margin: 0 auto;
@@ -352,7 +358,7 @@ h1 {
   position: absolute;
 }
 
-.gameArea .rocketArea .rocketShip {
+.rocketArea .rocketShip {
   position: absolute;
   display: block;
   margin: 0 auto;

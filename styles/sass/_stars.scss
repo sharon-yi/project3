@@ -1,35 +1,32 @@
-.gameArea {
-  .star1,
-  .star2,
-  .star3,
-  .star4 {
+// [STYLING FOR THE STARS IN THE BACKGROUND]
+  .starOne,
+  .starTwo,
+  .starThree,
+  .starFour {
     position: absolute;
     width: 12px;
     height: 12px;
     margin: 0 auto;
     z-index: -2;
   }
-  
-  .star1 {
+
+// Defines where the stars will be positioned starting the game
+  .starOne {
     left: 100px;
     top: -20px;
   }
   
-  .star2 {
+  .starTwo {
     left: 150px;
-    top: -500px;
+    top: -450px;
   }
   
-  .star3 {
+  .starThree {
     left: 330px;
     top: -90px;
   }
   
-  .star4 {
+  .starFour {
     left: 50px;
     top: -300px;
   }
-
-
-
-}
