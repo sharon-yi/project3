@@ -1,112 +1,74 @@
-.gameArea {
-    .asteroidAreaOne {
-      .asteroidHeightOne {
-        position: absolute;
-        width: 20px;
-        height: 60px;
-        margin: 0 auto;
-      }
+// [STYLING FOR ASTEROIDS AND THEIR COLLISION DIVS]
+.asteroid {
+  position: absolute;
+  display: block;
+  top: -20px;
+}
 
-      .asteroidWidthOne {
-        position: absolute;
-        display: block;
-        width: 60px;
-        height: 20px;
-        margin: auto 0;
-        top: 15px;
-        left: -20px;
-      }
-    }
+.asteroidAreaOne,
+.asteroidAreaTwo,
+.asteroidAreaThree,
+.asteroidAreaFour,
+.asteroidHeightOne,
+.asteroidHeightTwo,
+.asteroidHeightThree,
+.asteroidHeightFour,
+.asteroidWidthOne,
+.asteroidWidthTwo,
+.asteroidWidthThree,
+.asteroidWidthFour {
+  position: absolute;
+  margin: 0 auto;
+}
 
-    .asteroidAreaTwo {
-      .asteroidHeightTwo {
-        position: absolute;
-        width: 30px;
-        height: 70px;
-        margin: 0 auto;
-      }
+// Defines where the asteroid will be positioned starting the game
+.asteroidAreaOne {
+  left: 150px;
+  top: -90px;
+}
 
-      .asteroidWidthTwo {
-        position: absolute;
-        display: block;
-        width: 70px;
-        height: 30px;
-        margin: auto 0;
-        top: 20px;
-        left: -20px;
-      }
-    }
+.asteroidAreaTwo {
+  left: 10px;
+  top: -270px;
+}
 
-    .asteroidAreaThree {
-      .asteroidHeightThree {
-        position: absolute;
-        width: 30px;
-        height: 70px;
-        margin: 0 auto;
-      }
+.asteroidAreaThree {
+  left: 300px;
+  top: -420px;
+}
 
-      .asteroidWidthThree {
-        position: absolute;
-        display: block;
-        width: 70px;
-        height: 30px;
-        margin: auto 0;
-        top: 20px;
-        left: -20px;
-      }
-    }
+.asteroidAreaFour {
+  left: 200px;
+  top: -620px;
+}
 
-    .asteroidAreaFour {
-      .asteroidHeightFour {
-        position: absolute;
-        width: 30px;
-        height: 70px;
-        margin: 0 auto;
-      }
+//Defines the height of the collision div (asteroid one is smaller so different px)
+.asteroidHeightOne {
+  width: 20px;
+  height: 60px;
+}
 
-      .asteroidWidthFour {
-        position: absolute;
-        display: block;
-        width: 70px;
-        height: 30px;
-        margin: auto 0;
-        top: 20px;
-        left: -20px;
-      }
-    }
+.asteroidHeightTwo,
+.asteroidHeightThree,
+.asteroidHeightFour {
+  width: 30px;
+  height: 70px;
+}
 
-    .asteroid {
-      position: absolute;
-      display: block;
-      top: -20px;
-    }
+//Defines the width of the collision div (asteroid one is smaller so different px)
+.asteroidWidthOne {
+  width: 60px;
+  height: 20px;
+  left: -20px;
+  top: 15px;
+}
 
-
-    .asteroidAreaOne {
-      position: absolute;
-      left: 150px;
-      top: -90px;
-      margin: 0 auto;
-    }
-
-    .asteroidAreaTwo {
-      position: absolute;
-      left: 10px;
-      top: -270px;
-      margin: 0 auto;
-    }
-
-    .asteroidAreaThree {
-      position: absolute;
-      left: 300px;
-      top: -420px;
-      margin: 0 auto;
-    }
-
-    .asteroidAreaFour {
-      position: absolute;
-      left: 200px;
-      top: -620px;
-      margin: 0 auto;
-    }
+.asteroidWidthTwo,
+.asteroidWidthThree,
+.asteroidWidthFour {
+  display: block;
+  width: 70px;
+  height: 30px;
+  top: 15px;
+  left: -20px;
 }

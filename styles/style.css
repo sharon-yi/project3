@@ -179,106 +179,75 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
-.gameArea .asteroidAreaOne .asteroidHeightOne {
-  position: absolute;
-  width: 20px;
-  height: 60px;
-  margin: 0 auto;
-}
-
-.gameArea .asteroidAreaOne .asteroidWidthOne {
-  position: absolute;
-  display: block;
-  width: 60px;
-  height: 20px;
-  margin: auto 0;
-  top: 15px;
-  left: -20px;
-}
-
-.gameArea .asteroidAreaTwo .asteroidHeightTwo {
-  position: absolute;
-  width: 30px;
-  height: 70px;
-  margin: 0 auto;
-}
-
-.gameArea .asteroidAreaTwo .asteroidWidthTwo {
-  position: absolute;
-  display: block;
-  width: 70px;
-  height: 30px;
-  margin: auto 0;
-  top: 20px;
-  left: -20px;
-}
-
-.gameArea .asteroidAreaThree .asteroidHeightThree {
-  position: absolute;
-  width: 30px;
-  height: 70px;
-  margin: 0 auto;
-}
-
-.gameArea .asteroidAreaThree .asteroidWidthThree {
-  position: absolute;
-  display: block;
-  width: 70px;
-  height: 30px;
-  margin: auto 0;
-  top: 20px;
-  left: -20px;
-}
-
-.gameArea .asteroidAreaFour .asteroidHeightFour {
-  position: absolute;
-  width: 30px;
-  height: 70px;
-  margin: 0 auto;
-}
-
-.gameArea .asteroidAreaFour .asteroidWidthFour {
-  position: absolute;
-  display: block;
-  width: 70px;
-  height: 30px;
-  margin: auto 0;
-  top: 20px;
-  left: -20px;
-}
-
-.gameArea .asteroid {
+.asteroid {
   position: absolute;
   display: block;
   top: -20px;
 }
 
-.gameArea .asteroidAreaOne {
+.asteroidAreaOne,
+.asteroidAreaTwo,
+.asteroidAreaThree,
+.asteroidAreaFour,
+.asteroidHeightOne,
+.asteroidHeightTwo,
+.asteroidHeightThree,
+.asteroidHeightFour,
+.asteroidWidthOne,
+.asteroidWidthTwo,
+.asteroidWidthThree,
+.asteroidWidthFour {
   position: absolute;
+  margin: 0 auto;
+}
+
+.asteroidAreaOne {
   left: 150px;
   top: -90px;
-  margin: 0 auto;
 }
 
-.gameArea .asteroidAreaTwo {
-  position: absolute;
+.asteroidAreaTwo {
   left: 10px;
   top: -270px;
-  margin: 0 auto;
 }
 
-.gameArea .asteroidAreaThree {
-  position: absolute;
+.asteroidAreaThree {
   left: 300px;
   top: -420px;
-  margin: 0 auto;
 }
 
-.gameArea .asteroidAreaFour {
-  position: absolute;
+.asteroidAreaFour {
   left: 200px;
   top: -620px;
-  margin: 0 auto;
+}
+
+.asteroidHeightOne {
+  width: 20px;
+  height: 60px;
+}
+
+.asteroidHeightTwo,
+.asteroidHeightThree,
+.asteroidHeightFour {
+  width: 30px;
+  height: 70px;
+}
+
+.asteroidWidthOne {
+  width: 60px;
+  height: 20px;
+  left: -20px;
+  top: 15px;
+}
+
+.asteroidWidthTwo,
+.asteroidWidthThree,
+.asteroidWidthFour {
+  display: block;
+  width: 70px;
+  height: 30px;
+  top: 15px;
+  left: -20px;
 }
 
 .gameArea .star1,
