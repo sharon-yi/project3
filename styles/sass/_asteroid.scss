@@ -1,0 +1,112 @@
+.gameArea {
+    .asteroidAreaOne {
+      .asteroidHeightOne {
+        position: absolute;
+        width: 20px;
+        height: 60px;
+        margin: 0 auto;
+      }
+
+      .asteroidWidthOne {
+        position: absolute;
+        display: block;
+        width: 60px;
+        height: 20px;
+        margin: auto 0;
+        top: 15px;
+        left: -20px;
+      }
+    }
+
+    .asteroidAreaTwo {
+      .asteroidHeightTwo {
+        position: absolute;
+        width: 30px;
+        height: 70px;
+        margin: 0 auto;
+      }
+
+      .asteroidWidthTwo {
+        position: absolute;
+        display: block;
+        width: 70px;
+        height: 30px;
+        margin: auto 0;
+        top: 20px;
+        left: -20px;
+      }
+    }
+
+    .asteroidAreaThree {
+      .asteroidHeightThree {
+        position: absolute;
+        width: 30px;
+        height: 70px;
+        margin: 0 auto;
+      }
+
+      .asteroidWidthThree {
+        position: absolute;
+        display: block;
+        width: 70px;
+        height: 30px;
+        margin: auto 0;
+        top: 20px;
+        left: -20px;
+      }
+    }
+
+    .asteroidAreaFour {
+      .asteroidHeightFour {
+        position: absolute;
+        width: 30px;
+        height: 70px;
+        margin: 0 auto;
+      }
+
+      .asteroidWidthFour {
+        position: absolute;
+        display: block;
+        width: 70px;
+        height: 30px;
+        margin: auto 0;
+        top: 20px;
+        left: -20px;
+      }
+    }
+
+    .asteroid {
+      position: absolute;
+      display: block;
+      top: -20px;
+    }
+
+
+    .asteroidAreaOne {
+      position: absolute;
+      left: 150px;
+      top: -90px;
+      margin: 0 auto;
+    }
+
+    .asteroidAreaTwo {
+      position: absolute;
+      left: 10px;
+      top: -270px;
+      margin: 0 auto;
+    }
+
+    .asteroidAreaThree {
+      position: absolute;
+      left: 300px;
+      top: -420px;
+      margin: 0 auto;
+    }
+
+    .asteroidAreaFour {
+      position: absolute;
+      left: 200px;
+      top: -620px;
+      margin: 0 auto;
+    }
+}

@@ -1,0 +1,35 @@
+.gameArea {
+  .star1,
+  .star2,
+  .star3,
+  .star4 {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    margin: 0 auto;
+    z-index: -2;
+  }
+  
+  .star1 {
+    left: 100px;
+    top: -20px;
+  }
+  
+  .star2 {
+    left: 150px;
+    top: -500px;
+  }
+  
+  .star3 {
+    left: 330px;
+    top: -90px;
+  }
+  
+  .star4 {
+    left: 50px;
+    top: -300px;
+  }
+
+
+
+}
