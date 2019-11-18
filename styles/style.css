@@ -336,33 +336,33 @@ h1 {
 
 .rocketArea {
   position: absolute;
+  margin: 0 auto;
+  width: 20px;
   left: 180px;
-  width: 20px;
   top: 75%;
-  margin: 0 auto;
-}
-
-.rocketArea .rocketHeight {
-  height: 60px;
-  width: 20px;
-  position: absolute;
-  margin: 0 auto;
-}
-
-.rocketArea .rocketWidth {
-  height: 50px;
-  width: 50px;
-  margin: 0 auto;
-  left: -14px;
-  top: 20px;
-  position: absolute;
 }
 
 .rocketArea .rocketShip {
   position: absolute;
-  display: block;
   margin: 0 auto;
+  display: block;
   width: 100%;
   left: 0px;
   top: -30px;
+}
+
+.rocketArea .rocketHeight {
+  position: absolute;
+  margin: 0 auto;
+  height: 60px;
+  width: 20px;
+}
+
+.rocketArea .rocketWidth {
+  position: absolute;
+  margin: 0 auto;
+  height: 50px;
+  width: 50px;
+  left: -14px;
+  top: 20px;
 }

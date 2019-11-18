@@ -1,32 +1,36 @@
+// [ROCKET SHIP STYLES]
+// Defines where the rocket will be positioned during the start of the game
 .rocketArea {
   position: absolute;
-  left: 180px;
-  width: 20px;
-  top: 75%;
   margin: 0 auto;
-
-  .rocketHeight {
-    height: 60px;
-    width: 20px;
-    position: absolute;
-    margin: 0 auto;
-  }
-
-  .rocketWidth {
-    height: 50px;
-    width: 50px;
-    margin: 0 auto;
-    left: -14px;
-    top: 20px;
-    position: absolute;
-  }
+  width: 20px;
+  left: 180px;
+  top: 75%;
 
   .rocketShip {
     position: absolute;
-    display: block;
     margin: 0 auto;
+    display: block;
     width: 100%;
     left: 0px;
     top: -30px;
+  }
+
+//Defines the height of the rocket's collision div
+  .rocketHeight {
+    position: absolute;
+    margin: 0 auto;
+    height: 60px;
+    width: 20px;
+  }
+
+//Defines the width of the rocket's collision div
+  .rocketWidth {
+    position: absolute;
+    margin: 0 auto;
+    height: 50px;
+    width: 50px;
+    left: -14px;
+    top: 20px;
   }
 }
